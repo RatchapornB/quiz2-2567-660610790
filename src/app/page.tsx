@@ -1,5 +1,10 @@
 "use client";
 
+import PostOwnner from "@/components/PostOwnner";
+import {PostOwnnerProps} from "@/libs/types";
+import Comment from "@/components/Comment";
+import Reply from "@/components/Reply";
+
 export default function Home() {
   return (
     <div
@@ -15,14 +20,14 @@ export default function Home() {
         <div className="vstack gap-3">
           <div className="d-flex align-items-center gap-3">
             <img
-              src="/profileImages/handsome.jpg"
+              src="/profileImages/Ratchaporn.jpg"
               width="48"
               height="48"
               className="rounded-circle"
               style={{ objectFit: "cover" }}
             />
             <span className="fw-semibold fs-5 text-white">
-              Chayanin Suatap 650610560
+              Ratchaporn Buanut 660610790 
             </span>
           </div>
 
@@ -81,8 +86,56 @@ export default function Home() {
             <br />
             <span style={{ color: "#E4E6EB" }}>จริงค้าบบบบบบบบ</span>
             <div className="d-flex align-items-center gap-1">
+              {/*<img src="/like.svg" width={20}></img>*/}
+              {/*<span style={{ color: "#B0B3B8" }}>2 คน</span>*/}
+            </div>
+          </div>
+        </div>
+
+        <div className="d-flex gap-2 my-2 ps-5">
+          <img
+            src="/profileImages/popcat.png"
+            width="48"
+            height="48"
+            className="rounded-circle"
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            className="rounded rounded-3 p-2"
+            style={{ backgroundColor: "#3A3B3C" }}
+          >
+            <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
+              Cat Meme
+            </span>
+            <br />
+            <span style={{ color: "#E4E6EB" }}>ลิซ่าาาาาาา</span>
+            <div className="d-flex align-items-center gap-1">
               <img src="/like.svg" width={20}></img>
               <span style={{ color: "#B0B3B8" }}>2 คน</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="d-flex gap-2 my-2">
+          <img
+            src="/profileImages/charliebrown.jpg"
+            width="48"
+            height="48"
+            className="rounded-circle"
+            style={{ objectFit: "cover" }}
+          />
+          <div
+            className="rounded rounded-3 p-2"
+            style={{ backgroundColor: "#3A3B3C" }}
+          >
+            <span className="fw-semibold" style={{ color: "#E4E6EB" }}>
+            Charlie Brown
+            </span>
+            <br />
+            <span style={{ color: "#E4E6EB" }}>บ้าไปแล้ว</span>
+            <div className="d-flex align-items-center gap-1">
+              {/*<img src="/like.svg" width={20}></img>*/}
+              {/*<span style={{ color: "#B0B3B8" }}>999 คน</span>*/}
             </div>
           </div>
         </div>
